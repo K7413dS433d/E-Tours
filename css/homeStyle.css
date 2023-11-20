@@ -50,5 +50,53 @@ nav input::placeholder{
 nav input::active{
     border: none;
 }
+/* Footer Code */
+*{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    margin: 10px 0 0 0;
+    background-color: #E2C693;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0;
+    color: var(--mainColor);
+    
+}
+h4{
+    color: #000000;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--mainColor);
+}
 
+li{
+    line-height: 0.60cm;
+}
+.copy{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    color: #000000;
+}
+.comp1{
+    line-height: 0.60cm;
+}
+.comp2 ul li{
+    margin-bottom: 5px;
+}
+
+.comp3 ul li{
+    margin-bottom: 7px;
+}
+.social ul li{
+   display: inline-block;
+   margin-bottom: 20px;
+}
 
