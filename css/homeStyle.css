@@ -8,13 +8,15 @@
 }
 *, *::before , *::after{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     padding: 0;
     margin: 0;
     font-family: 'Kanit', sans-serif;
     color: white;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 nav{
     margin: 0 40px;
@@ -30,7 +32,7 @@ nav div.NavBar li{
     font-size: 1.5rem;
 }
 nav div.NavBar a{
-    text-decoration: none; 
+    text-decoration: none;
     color:var(--mainColor);
     /* removed the link underline */
 }
@@ -52,3 +54,144 @@ nav input::active{
 }
 
 
+
+
+/*section*/
+section{
+    width: 100%;
+    height: 150vh;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+
+section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3000;
+    background-image: url("/images/E-tours\ Pattern.png");
+    background-size:cover;
+    background-repeat: repeat-y;
+    opacity: .05;
+}
+
+/*box*/
+section .box {
+    margin: 0 auto 4em auto;
+    width: 85%;
+    height: calc((150vh / 3) - 4em);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+section .box:nth-child(2){
+    flex-direction: row-reverse;
+
+}
+
+/*info box*/
+section .box .info{
+    max-width: 50%;
+}
+
+section .box .info h2{
+    color: var(--secColor);
+    font-size: 40px;
+
+}
+
+
+section .box .info p{
+    color: var(--mainColor);
+    font-size: 20px;
+}
+
+
+/*image container*/
+section .box .image-container{
+    width: 40%;
+    background-color: #EEEE;
+    position: relative;
+}
+
+
+section .box .image-container img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 200;
+}
+
+
+/*before and after*/
+section .box .image-container::before{
+    content: "";
+    background-color: var(--mainColor);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 101;
+}
+
+
+section .box .image-container::after{
+    content: "";
+    background-color: var(--secColor);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    z-index: 100;
+}
+
+
+/*button*/
+section .button-container{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+section .button-container::after{
+    content: '';
+    background-color: var(--secColor);
+    width: calc(10% + 40px);
+    height: 60%;
+    position: absolute;
+    left: calc(45% - 20px);
+    bottom: calc(50% -20px);
+    z-index: -1;
+}
+
+section .button-container button{
+    width: 10%;
+    font-size: 25px;
+    padding: 15px;
+    color: white;
+    background-color: var(--mainColor);
+    border: none;
+    transition: .2s;
+}
+
+section .button-container button:hover{
+    cursor:pointer;
+}
+
+section .button-container button:active{
+    transform: scale(.96);
+
+}
