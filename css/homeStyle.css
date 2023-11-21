@@ -3,22 +3,26 @@
     --secColor: #E2C693;
     --footerdesColor: #343434;
     --black: #000000;
-    --mainFont: font-family: 'Kanit', sans-serif;;
+    --mainFont: font-family: 'Kanit', sans-serif;
+    ;
     --welcomeFont: font-family: 'Kaushan Script', cursive;
 
 }
-*, *::before , *::after{
+
+*, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     padding: 0;
     margin: 0;
     font-family: 'Kanit', sans-serif;
     color: white;
 
 }
+
 /* nav::before{
     content: "";
     background-color: white;
@@ -32,7 +36,7 @@ body{
     border-radius: 15px;
     
 } */
-nav{
+nav {
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
@@ -43,31 +47,36 @@ nav{
     z-index: 1000;
     background-color: white;
     width: 100%;
-    border-bottom: 3px solid var(--mainColor) ;
+    border-bottom: 3px solid var(--mainColor);
     /* margin-left: 7.5%; */
-    
+
 }
-nav div.NavBar li{
+
+nav div.NavBar li {
     list-style: none;
     display: inline;
     margin: 0 25px;
     font-size: 1.5rem;
     transition: .2s ease-in;
 }
-nav div.NavBar li:hover{
+
+nav div.NavBar li:hover {
     border-bottom: 5px solid var(--secColor);
 }
-nav div.NavBar a{
-    text-decoration: none; 
-    color:var(--mainColor);
+
+nav div.NavBar a {
+    text-decoration: none;
+    color: var(--mainColor);
     /* removed the link underline */
 }
-nav img{
+
+nav img {
     width: 100%;
     max-width: 80px;
 }
 
-nav .searchInput{  /* this is the container where to put the search bar and search image */
+nav .searchInput {
+    /* this is the container where to put the search bar and search image */
     width: 100%;
     max-width: 330px;
     max-height: 50px;
@@ -80,52 +89,63 @@ nav .searchInput{  /* this is the container where to put the search bar and sear
     padding: 10px;
     color: var(--mainColor);
 }
-nav .searchInput input{
+
+nav .searchInput input {
     background: transparent;
-    flex: 1; /* makes it take the full width of the .searchInput container */
+    flex: 1;
+    /* makes it take the full width of the .searchInput container */
     outline: none;
     border: 0;
     font-size: 1.3rem;
     color: var(--mainColor);
-    padding-left:10px;
+    padding-left: 10px;
 }
-nav input::placeholder{
+
+nav input::placeholder {
     color: var(--mainColor);
     font-size: 1.3rem;
     padding-left: 5px;
     opacity: 0.5;
-    
+
 
 }
-nav input::active{
+
+nav input::active {
     border: none;
 }
-nav .searchInput button img{
+
+nav .searchInput button img {
     width: 40px;
     border-radius: 40px;
     transition: .2s ease-in-out;
 }
-nav .searchInput button{
+
+nav .searchInput button {
     border: 0;
     border-radius: 50%;
     background: none;
-    
+
 }
-nav .searchInput button img:hover{
+
+nav .searchInput button img:hover {
     filter: brightness(.8);
     background-color: rgba(0, 0, 0, 0.1);
-    cursor:pointer;
+    cursor: pointer;
 
 
 }
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration{ display: none; } 
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
 /* Removes the X from the search bar */
 
 
-div.mainContainer{
+div.mainContainer {
     position: relative;
     z-index: 2;
     background-image: url("../images/Main.png");
@@ -134,32 +154,35 @@ div.mainContainer{
     width: 100%;
     height: 100vh;
 }
-#welcome ,#etours{
+
+#welcome, #etours {
     font-family: 'Kaushan Script', cursive;
     font-size: 4rem;
 }
 
-div.mainContainer .blurDiv1{
+div.mainContainer .blurDiv1 {
     position: relative;
     top: 20%;
     width: 500px;
     text-align: center;
     font-size: 2.5rem;
-    background-color:rgba(0, 0, 0, 0.3);
-    backdrop-filter:blur(10px) ;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
 }
-div.mainContainer .blurDiv2{
-    position: absolute; 
+
+div.mainContainer .blurDiv2 {
+    position: absolute;
     bottom: 0;
     width: 100%;
     text-align: left;
     font-size: 1.2rem;
-    background-color:rgba(0, 0, 0, 0.3);
-    backdrop-filter:blur(10px) ;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
     padding: 30px 70px;
     display: block;
 }
-div.mainContainer .blurDiv2 button{
+
+div.mainContainer .blurDiv2 button {
     padding: 15px 30px;
     font-size: 1.5rem;
     font-family: var(--mainFont);
@@ -171,14 +194,15 @@ div.mainContainer .blurDiv2 button{
 
 
 }
-div.mainContainer .blurDiv2 button:hover{
-    cursor:pointer;
+
+div.mainContainer .blurDiv2 button:hover {
+    cursor: pointer;
     filter: brightness(1.1);
 }
 
 
 /* khaled css part */
-section{
+section {
     width: 100%;
     height: 175vh;
     /* edit */
@@ -188,12 +212,13 @@ section{
 
 }
 
-.sectionContainer{ 
+.sectionContainer {
     padding: 50px 0px;
 }
+
 /* add */
 
-section::before{
+section::before {
     content: '';
     position: absolute;
     left: 0;
@@ -202,7 +227,7 @@ section::before{
     height: 100%;
     z-index: -3000;
     background-image: url("../images/E-tours\ Pattern.png");
-    background-size:cover;
+    background-size: cover;
     background-repeat: repeat-y;
     opacity: .08;
 }
@@ -218,18 +243,18 @@ section .box {
 }
 
 
-section .box:nth-child(2){
+section .box:nth-child(2) {
     flex-direction: row-reverse;
 
 }
 
 /*info box*/
-section .box .info{
-    max-width: 40%; 
+section .box .info {
+    max-width: 40%;
     /* edit */
 }
 
-section .box .info h2{
+section .box .info h2 {
     color: var(--secColor);
     font-size: 3rem;
     /* edit */
@@ -237,7 +262,7 @@ section .box .info h2{
 }
 
 
-section .box .info p{
+section .box .info p {
     color: var(--mainColor);
     font-size: 1.5rem;
     /* edit */
@@ -245,14 +270,14 @@ section .box .info p{
 
 
 /*image container*/
-section .box .image-container{
+section .box .image-container {
     width: 40%;
     background-color: #EEEE;
     position: relative;
 }
 
 
-section .box .image-container img{
+section .box .image-container img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -261,7 +286,7 @@ section .box .image-container img{
 
 
 /*before and after*/
-section .box .image-container::before{
+section .box .image-container::before {
     content: "";
     background-color: var(--mainColor);
     width: 100%;
@@ -273,7 +298,7 @@ section .box .image-container::before{
 }
 
 
-section .box .image-container::after{
+section .box .image-container::after {
     content: "";
     background-color: var(--secColor);
     width: 100%;
@@ -286,7 +311,7 @@ section .box .image-container::after{
 
 
 /*button*/
-section .button-container{
+section .button-container {
     width: 100%;
     height: 60px;
     /* edit */
@@ -296,7 +321,7 @@ section .button-container{
     position: relative;
 }
 
-section .button-container::after{
+section .button-container::after {
     content: '';
     background-color: var(--secColor);
     width: calc(10% + 40px);
@@ -307,7 +332,7 @@ section .button-container::after{
     z-index: -1;
 }
 
-section .button-container button{
+section .button-container button {
     width: 10%;
     font-size: 25px;
     padding: 15px;
@@ -317,8 +342,8 @@ section .button-container button{
     transition: .2s;
 }
 
-section .button-container button:hover{
-    cursor:pointer;
+section .button-container button:hover {
+    cursor: pointer;
     transform: scale(1.1);
     filter: brightness(1.09);
     /* edit */
@@ -326,11 +351,12 @@ section .button-container button:hover{
 
 /* Toaa */
 
-section .button-container button:active{
+section .button-container button:active {
     transform: scale(.96);
 
 }
-footer{
+
+footer {
     margin: 10px 0 0 0;
     background-color: #E2C693;
     width: 100%;
@@ -338,59 +364,66 @@ footer{
     justify-content: space-evenly;
     padding: 40px 0;
     color: rgb(39, 39, 39);
-    
+
 
 }
-footer h4{
+
+footer h4 {
     color: #000000;
     font-size: 1.5rem;
 }
-footer ul{
+
+footer ul {
     list-style: none;
-    
+
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: rgb(39, 39, 39);
 }
 
-footer li{
+footer li {
     line-height: 0.60cm;
     font-size: 1.2rem;
-    transition: .2s 
+    transition: .2s
 }
-footer li img{
+
+footer li img {
     transition: .2s;
 }
-footer li img:hover{
+
+footer li img:hover {
     filter: drop-shadow(2px 2px 2px);
 }
-.copy{
+
+.copy {
     width: 100%;
     text-align: center;
     padding-top: 10px;
     color: #000000;
     margin-bottom: 4px;
 }
-footer .comp1{
+
+footer .comp1 {
     line-height: .8cm;
     font-size: 1.2rem;
 }
-footer .comp2 ul li{
+
+footer .comp2 ul li {
     margin-bottom: 5px;
     transition: .2s;
 }
-footer .comp2 ul li a:hover{
+
+footer .comp2 ul li a:hover {
     color: #000000;
 }
 
-footer .comp3 ul li{
+footer .comp3 ul li {
     margin-bottom: 7px;
 }
-footer .social ul li{
-   display: inline-block;
-   margin-bottom: 20px;
+
+footer .social ul li {
+    display: inline-block;
+    margin-bottom: 20px;
 }
-
-
-
