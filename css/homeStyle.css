@@ -45,8 +45,8 @@ nav div.NavBar a{
     /* removed the link underline */
 }
 nav img{
-    width: 100%;
-    max-width: 150px;
+    max-width: 120px;
+    margin: 6px;
 }
 
 nav .searchInput{  /* this is the container where to put the search bar and search image */
