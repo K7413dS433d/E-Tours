@@ -1,6 +1,6 @@
 :root {
     --mainColor: #00A0AE;
-    --textcolor:  #fff;
+    --textcolor: #fff;
     --secColor: #E2C693;
     --footerdesColor: #343434;
     --black: #000000;
@@ -8,18 +8,21 @@
 
 
 }
-*, *::before , *::after{
+
+*, *::before, *::after {
     box-sizing: border-box;
-   padding: 0;
+    padding: 0;
     margin: 0;
 }
-body{
+
+body {
     padding: 0;
     margin: 0;
     font-family: 'Kanit', sans-serif;
     color: white;
 }
-nav{
+
+nav {
     margin: 0 40px;
     margin-top: 10px;
     display: flex;
@@ -29,27 +32,32 @@ nav{
     padding-bottom: 10px;
     z-index: 1;
 }
-nav div.NavBar li{
+
+nav div.NavBar li {
     list-style: none;
     display: inline;
     margin: 0 25px;
     font-size: 1.5rem;
     transition: .2s ease-in;
 }
-nav div.NavBar li:hover{
+
+nav div.NavBar li:hover {
     border-bottom: 5px solid var(--secColor);
 }
-nav div.NavBar a{
+
+nav div.NavBar a {
     text-decoration: none;
-    color:var(--mainColor);
+    color: var(--mainColor);
     /* removed the link underline */
 }
-nav img{
+
+nav img {
     max-width: 120px;
     margin: 6px;
 }
 
-nav .searchInput{  /* this is the container where to put the search bar and search image */
+nav .searchInput {
+    /* this is the container where to put the search bar and search image */
     width: 100%;
     max-width: 330px;
     max-height: 50px;
@@ -62,32 +70,38 @@ nav .searchInput{  /* this is the container where to put the search bar and sear
     padding: 10px;
     color: var(--mainColor);
 }
-nav .searchInput input{
+
+nav .searchInput input {
     background: transparent;
-    flex: 1; /* makes it take the full width of the .searchInput container */
+    flex: 1;
+    /* makes it take the full width of the .searchInput container */
     outline: none;
     border: 0;
     font-size: 1.3rem;
     color: var(--mainColor);
-    padding-left:10px;
+    padding-left: 10px;
 }
-nav input::placeholder{
+
+nav input::placeholder {
     color: var(--mainColor);
     font-size: 1.3rem;
     padding-left: 5px;
     opacity: 0.5;
-    
+
 
 }
-nav input::active{
+
+nav input::active {
     border: none;
 }
+
 /* Footer Code */
-*{
+* {
     margin: 0;
     padding: 0;
 }
-footer{
+
+footer {
     margin: 10px 0 0 0;
     background-color: #E2C693;
     width: 100%;
@@ -95,56 +109,63 @@ footer{
     justify-content: space-evenly;
     padding: 40px 0;
     color: var(--mainColor);
-    
+
 }
-h4{
+
+h4 {
     color: #000000;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--mainColor);
 }
 
 
-li{
+li {
     line-height: 0.60cm;
 }
-.copy{
+
+.copy {
     width: 100%;
     text-align: center;
     padding-top: 10px;
     color: #000000;
 }
-.comp1{
+
+.comp1 {
     line-height: 0.60cm;
 }
-.comp2 ul li{
+
+.comp2 ul li {
     margin-bottom: 5px;
 }
 
-.comp3 ul li{
+.comp3 ul li {
     margin-bottom: 7px;
 }
-.social ul li{
-   display: inline-block;
-   margin-bottom: 20px;
+
+.social ul li {
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
- section .image img{
+section .image img {
     margin: -10px 0px;
     padding: 0;
-    background-repeat: no-repeat; 
-     background-size: contain;
-     width: 100%;
-     height: 100vh;
-     object-fit: cover;
-     z-index: 1;
- }
-   
-section .welcom p{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+}
+
+section .welcom p {
     color: var(--textcolor);
     z-index: 2;
     font-family: 'Cairo', sans-serif;
@@ -155,7 +176,7 @@ section .welcom p{
     padding-top: 15px;
     border-top-left-radius: 70px;
     border-bottom-right-radius: 70px;
-    border : 10px inset  #fff;
+    border: 10px inset #fff;
     position: absolute;
     top: 10%;
     left: 3%;
@@ -165,72 +186,81 @@ section .welcom p{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.30);
     background-color: rgb(0 0 0/0.2);
     font-weight: bold;
 
 }
-section .pargraph p{
-    color:var(--textcolor);
+
+section .pargraph p {
+    color: var(--textcolor);
     width: 100%;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.30);
     background-color: rgb(0 0 0/0.2);
     position: absolute;
-    top:80%;
+    top: 80%;
     width: 100%;
     padding: 15px 30px;
     height: 196px;
     font-size: 1.2rem;
 }
-section .pargraph  input{
+
+section .pargraph input {
     color: var(--textcolor);
-     background-color:rgb(68 154 233);
+    background-color: rgb(68 154 233);
     border: none;
     text-align: center;
     padding: 10px;
-    width:97px;
+    width: 97px;
     position: absolute;
     top: 107%;
     left: 2%;
 }
-section .pargraph  input:hover{
-    background-color: rgb(23, 23, 238);
-    
-}
-   
 
-nav .searchInput button img{
+section .pargraph input:hover {
+    background-color: rgb(23, 23, 238);
+
+}
+
+
+nav .searchInput button img {
     width: 40px;
     border-radius: 40px;
     transition: .2s ease-in-out;
 }
-nav .searchInput button{
+
+nav .searchInput button {
     border: 0;
     border-radius: 50%;
     background: none;
-    
+
 }
-nav .searchInput button img:hover{
+
+nav .searchInput button img:hover {
     filter: brightness(.8);
     background-color: rgba(0, 0, 0, 0.1);
 
 }
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration{ display: none; } 
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
 /* Removes the X from the search bar */
 
 
 
 /*section*/
-section{
+section {
     width: 100%;
     height: 150vh;
     position: relative;
@@ -240,7 +270,7 @@ section{
 }
 
 
-section::before{
+section::before {
     content: '';
     position: absolute;
     left: 0;
@@ -249,7 +279,7 @@ section::before{
     height: 100%;
     z-index: -3000;
     background-image: url("/images/E-tours\ Pattern.png");
-    background-size:cover;
+    background-size: cover;
     background-repeat: repeat-y;
     opacity: .05;
 }
@@ -265,38 +295,38 @@ section .box {
 }
 
 
-section .box:nth-child(2){
+section .box:nth-child(2) {
     flex-direction: row-reverse;
 
 }
 
 /*info box*/
-section .box .info{
+section .box .info {
     max-width: 50%;
 }
 
-section .box .info h2{
+section .box .info h2 {
     color: var(--secColor);
     font-size: 40px;
 
 }
 
 
-section .box .info p{
+section .box .info p {
     color: var(--mainColor);
     font-size: 20px;
 }
 
 
 /*image container*/
-section .box .image-container{
+section .box .image-container {
     width: 40%;
     background-color: #EEEE;
     position: relative;
 }
 
 
-section .box .image-container img{
+section .box .image-container img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -305,7 +335,7 @@ section .box .image-container img{
 
 
 /*before and after*/
-section .box .image-container::before{
+section .box .image-container::before {
     content: "";
     background-color: var(--mainColor);
     width: 100%;
@@ -317,7 +347,7 @@ section .box .image-container::before{
 }
 
 
-section .box .image-container::after{
+section .box .image-container::after {
     content: "";
     background-color: var(--secColor);
     width: 100%;
@@ -330,7 +360,7 @@ section .box .image-container::after{
 
 
 /*button*/
-section .button-container{
+section .button-container {
     width: 100%;
     height: 3em;
     display: flex;
@@ -339,7 +369,7 @@ section .button-container{
     position: relative;
 }
 
-section .button-container::after{
+section .button-container::after {
     content: '';
     background-color: var(--secColor);
     width: calc(10% + 40px);
@@ -350,7 +380,7 @@ section .button-container::after{
     z-index: -1;
 }
 
-section .button-container button{
+section .button-container button {
     width: 10%;
     font-size: 25px;
     padding: 15px;
@@ -360,11 +390,11 @@ section .button-container button{
     transition: .2s;
 }
 
-section .button-container button:hover{
-    cursor:pointer;
+section .button-container button:hover {
+    cursor: pointer;
 }
 
-section .button-container button:active{
+section .button-container button:active {
     transform: scale(.96);
 
 }
