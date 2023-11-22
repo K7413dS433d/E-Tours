@@ -363,7 +363,8 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 40px 0;
-    color: rgb(39, 39, 39);
+    color: rgb(71, 71, 71);
+    /* edited */
 
 
 }
@@ -380,7 +381,8 @@ footer ul {
 
 footer a {
     text-decoration: none;
-    color: rgb(39, 39, 39);
+    color: rgba(71, 71, 71);
+    /* edited */
 }
 
 footer li {
@@ -408,11 +410,15 @@ footer li img:hover {
 footer .comp1 {
     line-height: .8cm;
     font-size: 1.2rem;
+    width: 20%;
+    /* added */
 }
 
 footer .comp2 ul li {
     margin-bottom: 5px;
     transition: .2s;
+    line-height: .7cm;
+    /* added */
 }
 
 footer .comp2 ul li a:hover {
