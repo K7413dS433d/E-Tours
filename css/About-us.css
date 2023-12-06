@@ -52,26 +52,29 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     width: 100%;
     margin: 20px 0px;
+    padding: 0 50px;
 }
+
 header div.HeaderBar li {
     list-style: none;
     display: inline;
     margin: 0 25px;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     position: relative;
 }
+
 header li {
     list-style: none;
     display: inline;
-    margin: 0 10px;
-    font-size: 1.7rem;
+    margin: 0 5px;
+    font-size: 1.4rem;
     position: relative;
 }
 
@@ -80,27 +83,32 @@ header div.HeaderBar li.e::before {
     position: absolute;
     width: 0;
     height: 5px;
-    border-radius: 5px; 
+    border-radius: 5px;
     left: 50%;
     bottom: 0;
     background: var(--mainColor);
-    transition: width 0.2s ease-in-out , left  0.2s ease-in-out;
+    margin-bottom: -5px;
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
 }
+
 header div.HeaderBar li.e:hover::before,
 header div.HeaderBar li.e:hover::after {
     width: 100%;
     left: 0%;
 }
-header li.login a{
+
+header li.login a {
     text-decoration: none;
     color: var(--mainColor);
     padding: 7px 15px;
     transition: .2s ease-in-out;
 }
-header li.login a:hover{
+
+header li.login a:hover {
     filter: brightness(1.25);
 }
-header li.signup a{
+
+header li.signup a {
     text-decoration: none;
     color: white;
     background-color: #0057FD;
@@ -108,22 +116,26 @@ header li.signup a{
     border-radius: 50px;
     transition: .2s ease-in-out;
 }
-header li.signup a:hover{
+
+header li.signup a:hover {
     filter: brightness(1.2);
 }
-header div.HeaderBar li.e a{
-    text-decoration: none; 
-    color:black;
+
+header div.HeaderBar li.e a {
+    text-decoration: none;
+    color: black;
     /* removed the link underline */
 }
-header img.logo{
-    width: 210px;
+
+header img.logo {
+    width: 160px;
 
 }
 
-header .searchInput{  /* this is the container where to put the search bar and search image */
+header .searchInput {
+    /* this is the container where to put the search bar and search image */
     width: 100%;
-    max-width: 330px;
+    width: 330px;
     max-height: 50px;
     color: var(--mainColor);
     border: 3px solid var(--mainColor);
@@ -132,47 +144,53 @@ header .searchInput{  /* this is the container where to put the search bar and s
     border-radius: 50px;
     padding: 10px;
     color: var(--mainColor);
+    transition: .2s ease-in-out;
 }
-header .searchInput input{
+header .searchInput input {
     background: transparent;
-    flex: 1; /* makes it take the full width of the .searchInput container */
+    flex: 1;
+    /* makes it take the full width of the .searchInput container */
     outline: none;
     border: 0;
     font-size: 1.3rem;
     color: black;
-    padding-left:10px;
+    padding-left: 10px;
+    transition: .2s ease-in-out;
 }
-header input::placeholder{
+
+header input::placeholder {
     color: black;
     font-size: 1.3rem;
     padding-left: 5px;
     opacity: 0.5;
-    
-
 }
-header input::active{
-    border: none;
-}
-header .searchInput button img{
+header .searchInput button img {
     width: 40px;
     border-radius: 40px;
     transition: .2s ease-in-out;
+    margin-right: 5px;
 }
-header .searchInput button{
+
+header .searchInput button {
     border: 0;
     border-radius: 40%;
     background: none;
-    
+
 }
-header .searchInput button img:hover{
+
+header .searchInput button img:hover {
     filter: brightness(.8);
     background-color: rgba(0, 0, 0, 0.01);
-    cursor:pointer;
+    cursor: pointer;
 }
+
+/* Removes the X from the search bar */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration{ display: none; } 
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
 /* Removes the X from the search bar */
 
 
