@@ -7,7 +7,7 @@
 
     to {
         opacity: 1;
-        transform: rotateX(10deg);
+        transform: rotateX(0deg);
     }
 }
 
@@ -17,5 +17,27 @@
 @keyframes topDestination {
     to {
         transform: translateY(-15px);
+    }
+}
+
+
+@keyframes reservation {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+        transform: rotateX(10deg);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
     }
 }

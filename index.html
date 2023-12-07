@@ -22,6 +22,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- js link -->
+    <script src="js/homePage.js"></script>
   </head>
 
   <body>
@@ -37,7 +39,7 @@
             <li class="e"><a href="#">Contact us</a></li>
           </ul>
         </div>
-        
+
         <div class="searchDiv">
           <form action="#" class="searchInput">
             <input type="search" name="search" placeholder="Search..." />
@@ -45,14 +47,11 @@
           </form>
         </div>
         <div class="ls">
-
           <ul>
             <li class="login"><a href="#">Login</a></li>
             <li class="signup"><a href="#">Sign up</a></li>
           </ul>
         </div>
-          
-        
       </header>
       <!-- start of body -->
       <div class="mainContainer">
@@ -61,32 +60,66 @@
             <div class="sec1-elements">
               <p>DISCOVER THE NATURAL NEW TRAVEL</p>
               <h1>Enjoy The <br />Best Moment Of Life</h1>
-              <!-- use link --> 
+              <!-- use link -->
               <a href="#">Discover More</a>
             </div>
           </div>
           <!-- reservation section -->
           <div class="sec1-reservation">
-            <!-- box1 -->
+            <!-- box 1 -->
             <div class="boxes">
-              <!-- location icon -->
-              <i class="fa-solid fa-location-dot fa-2xl"></i>
-              <div class="menu">
-                <select name="Location">
-                  <option value="default" selected>Location</option>
-                  <option value="Siwa oasis">Siwa oasis</option>
-                  <option value="Luxor">Luxor</option>
-                  <option value="Aswan">Aswan</option>
-                </select>
-                <i class="fa-solid fa-caret-down"></i>
+              <div class="iconBox">
+                <!-- location icon -->
+                <i class="fa-solid fa-location-dot fa-2xl"></i>
+              </div>
+              <div class="dataBox">
+                <div class="labelAndI">
+                  <label for="location">Location</label
+                  ><i class="fa-solid fa-caret-down"></i>
+                </div>
+                <input
+                  type="text"
+                  id="location"
+                  value="Hurghada, Red Sea Governorate"
+                />
               </div>
             </div>
-            <!-- box2 -->
-            <div class="boxes"></div>
-            <!-- box3 -->
-            <div class="boxes"></div>
+            <!-- box 2 -->
+            <div class="boxes">
+              <div class="iconBox">
+                <!-- location icon -->
+                <i class="fa-regular fa-calendar-minus fa-2xl"></i>
+              </div>
+              <div class="dataBox">
+                <div class="labelAndI">
+                  <label for="checkIn">Check In</label
+                  ><i class="fa-solid fa-caret-down"></i>
+                </div>
+                <input type="date" id="checkIn" value="2022-10-15" />
+              </div>
+            </div>
+            <!-- box 3 -->
+            <div class="boxes">
+              <div class="iconBox">
+                <!-- location icon -->
+                <i class="fa-regular fa-calendar-minus fa-2xl"></i>
+              </div>
+              <div class="dataBox">
+                <div class="labelAndI">
+                  <label for="checkOut">Check Out</label
+                  ><i class="fa-solid fa-caret-down"></i>
+                </div>
+                <input type="date" id="checkOut" value="2022-12-15" />
+              </div>
+            </div>
             <!-- box4 -->
-            <div class="boxes"></div>
+            <div class="boxes">
+              <!-- link here -->
+              <a href="#"
+                >Search
+                <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+              </a>
+            </div>
           </div>
         </div>
         <div class="section2">
@@ -164,10 +197,6 @@
         <div class="section4">
           <div class="sec4-slider">
             <h1>Top Destination</h1>
-            <div class="arrows">
-              <i class="fa-solid fa-circle-chevron-left fa-2xl"></i>
-              <i class="fa-solid fa-circle-chevron-right fa-2xl"></i>
-            </div>
           </div>
           <div class="sec4-cards-container">
             <div class="sec4-card">
@@ -276,7 +305,7 @@
               satisfaction in mind.
             </p>
             <!-- link here -->
-            <a href="#">More About Us</a>
+            <a href="pages/About-us.html">More About Us</a>
           </div>
         </div>
 
@@ -296,9 +325,170 @@
           </div>
         </div>
         <!-- section 8 -->
-        <div class="section8"></div>
+        <div class="section8">
+          <div class="sec8-content">
+            <div class="sec8-header">
+              <h1>Travel To make Sweet Memories</h1>
+              <p>Find trips that fit a flexible lifestyle</p>
+            </div>
+            <div class="sec8-body">
+              <!-- part 1 -->
+              <div class="sec8-body-parts">
+                <div class="numAndHead">
+                  <div class="number">01</div>
+                  <h2>Find trips that fit your freedom</h2>
+                </div>
+                <div class="content">
+                  <p>
+                    Travelling offers freedom and flexibility, solitude<br />
+                    and spontaneity, and privacy and purpose.
+                  </p>
+                </div>
+              </div>
+              <!-- part 2 -->
+              <div class="sec8-body-parts">
+                <div class="numAndHead">
+                  <div class="number">02</div>
+                  <h2>Get back to nature by travel</h2>
+                </div>
+                <div class="content">
+                  <p>
+                    The world is a playground and you can finally<br />explore
+                    mother nature's inimitable canvas.
+                  </p>
+                </div>
+              </div>
+              <!-- part 3 -->
+              <div class="sec8-body-parts">
+                <div class="numAndHead">
+                  <div class="number">03</div>
+                  <h2>Reignite those travel tastebuds</h2>
+                </div>
+                <div class="content">
+                  <p>
+                    Them are infinite reasons to love travel, one of<br />
+                    them being the food, glorious food.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sec8-img">
+            <!-- rate 1 -->
+            <div class="userRate">
+              <div class="userImg">
+                <img src="images/ahmed.jpeg" alt="image not found" />
+              </div>
+              <div class="userNameAndRate">
+                <h2>Ahmed</h2>
+                <div class="startAndNum">
+                  <p>4.8<i class="fa-solid fa-star"></i></p>
+                </div>
+              </div>
+            </div>
+            <!-- rate 2 -->
+            <div class="userRate">
+              <div class="userImg">
+                <img src="images/khaled.jpeg" alt="image not found" />
+              </div>
+              <div class="userNameAndRate">
+                <h2>Khaled</h2>
+                <div class="startAndNum">
+                  <p>4.6<i class="fa-solid fa-star"></i></p>
+                </div>
+              </div>
+            </div>
+            <!-- rate 3 -->
+            <div class="userRate">
+              <div class="userImg">
+                <img src="images/user.png" alt="image not found" />
+              </div>
+              <div class="userNameAndRate">
+                <h2>Toaa</h2>
+                <div class="startAndNum">
+                  <p>4.9<i class="fa-solid fa-star"></i></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="img">
+              <img src="images/sec8-img1.jpg" alt="image not found" />
+            </div>
+          </div>
+        </div>
         <!-- section 9 -->
-        <div class="section9"></div>
+        <div class="section9">
+          <div class="slideshow-container">
+            <!-- slide 1 -->
+            <div class="mySlides fade">
+              <div class="sec9-img">
+                <img src="images/sec9-img1.png" alt="image not found" />
+              </div>
+              <div class="sec9-content">
+                <h2>What Our Customer Say</h2>
+                <div class="customer">
+                  <div class="customer-img">
+                    <img src="images/mohamed.jpeg" alt="image not found" />
+                  </div>
+                  <div class="nameAndJop">
+                    <h3>Mohamed Khaled</h3>
+                    <p>Graphic Designer</p>
+                  </div>
+                  <div class="starts">
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                  </div>
+                </div>
+                <p>
+                  My adventure with Tripist in Asia was an absolute revelation.
+                  From the bustling streets of Bangkok to the tranquil rice
+                  fields of Bali, every moment was enchanting. The attention to
+                  detail in the itinerary was remarkable.
+                </p>
+              </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="mySlides fade">
+              <div class="sec9-img">
+                <img src="images/sec9-img1.png" alt="image not found" />
+              </div>
+              <div class="sec9-content">
+                <h2>What Our Customer Say</h2>
+                <div class="customer">
+                  <div class="customer-img">
+                    <img src="images/user.png" alt="image not found" />
+                  </div>
+                  <div class="nameAndJop">
+                    <h3>Tasneem Helmy</h3>
+                    <p>Backend Developer</p>
+                  </div>
+                  <div class="starts">
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                  </div>
+                </div>
+                <p>
+                  My adventure with Tripist in Asia was an absolute revelation.
+                  From the bustling streets of Bangkok to the tranquil rice
+                  fields of Bali, every moment was enchanting. The attention to
+                  detail in the itinerary was remarkable.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <div style="text-align: center">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
       </div>
       <!-- end of body -->
     </div>
@@ -315,7 +505,7 @@
         <div class="f2">
           <h1>Company:</h1>
           <ul>
-            <li><a href="#">About</a></li>
+            <li><a href="pages/About-us.html">About</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Tours &amp; Packages</a></li>
             <li><a href="#">Terms of Service</a></li>

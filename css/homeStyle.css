@@ -149,6 +149,7 @@ header .searchInput {
     color: var(--mainColor);
     transition: .2s ease-in-out;
 }
+
 header .searchInput input {
     background: transparent;
     flex: 1;
@@ -167,6 +168,7 @@ header input::placeholder {
     padding-left: 5px;
     opacity: 0.5;
 }
+
 header .searchInput button img {
     width: 40px;
     border-radius: 40px;
@@ -324,6 +326,9 @@ input[type="search"]::-webkit-search-results-decoration {
     gap: 2em;
     align-items: center;
 
+    /*animation*/
+    animation: reservation 2s ease;
+
 }
 
 
@@ -338,31 +343,111 @@ input[type="search"]::-webkit-search-results-decoration {
     align-items: center;
 }
 
+.sec1-reservation .boxes .iconBox i {
+    color: var(--mainColor);
+
+}
+
+.sec1-reservation .boxes:nth-child(2) .iconBox,
+.sec1-reservation .boxes:nth-child(3) .iconBox {
+    position: relative;
+}
+
+
+.sec1-reservation .boxes .dataBox #checkIn,
+.sec1-reservation .boxes .dataBox #checkOut {
+    font-size: 1.6em;
+}
+
+.sec1-reservation .boxes:nth-child(2) .iconBox i,
+.sec1-reservation .boxes:nth-child(3) .iconBox i {
+    position: absolute;
+    right: -1%;
+}
+
+.sec1-reservation .boxes .dataBox {
+    height: 75%;
+    width: 80%;
+
+}
+
+.sec1-reservation .boxes .dataBox input {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+/*remove date icon*/
+.sec1-reservation .boxes .dataBox input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.sec1-reservation .boxes .dataBox .labelAndI i {
+    padding-left: 4%;
+    opacity: .7;
+
+}
+
+.sec1-reservation .boxes .dataBox .labelAndI label {
+    font-size: 1em;
+    opacity: .8;
+}
 
 
 .sec1-reservation .boxes:nth-child(1) {
-    background-color: red;
     grid-column: 1/6;
 }
 
 .sec1-reservation .boxes:nth-child(2) {
-    background-color: green;
     grid-column: 6/9;
 }
 
 .sec1-reservation .boxes:nth-child(3) {
-    background-color: blue;
     grid-column: 9/12;
 
 }
 
 .sec1-reservation .boxes:nth-child(4) {
-    background-color: black;
     grid-column: 12/15;
+    border-right: none;
 
 }
 
+/*section 4*/
+.sec1-reservation .boxes:nth-child(4) a {
+    width: 75%;
+    height: 45%;
+    border-radius: 25px;
+    padding: 0 10%;
+    margin-right: 10%;
+    background-color: var(--mainColor);
+    color: white;
+    font-family: Arial;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    transition: .5s;
 
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec1-reservation .boxes:nth-child(4) a:hover {
+    transform: scale(.98);
+}
+
+.sec1-reservation .boxes:nth-child(4) i {
+    color: white;
+
+}
 
 
 /*icons and symbols*/
@@ -700,23 +785,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 
-.section4 .sec4-slider .arrows {
-    width: 7%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.section4 .sec4-slider .arrows i::before {
-    background-color: var(--mainColor);
-    color: white;
-    border-radius: 50%;
-    border: 2px solid #5c5c5c;
-
-}
-
 
 /*section 4 cards*/
 .section4 .sec4-cards-container {
@@ -857,7 +925,8 @@ input[type="search"]::-webkit-search-results-decoration {
     align-items: center;
     position: relative;
 }
-.section5::before{
+
+.section5::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -892,7 +961,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .section5 a {
     width: 15%;
-    height: 15%;
+    height: 13%;
     border-radius: 20em;
     background-color: var(--mainColor);
     color: white;
@@ -903,6 +972,7 @@ input[type="search"]::-webkit-search-results-decoration {
     text-align: center;
     transition: .5s;
 
+    z-index: 100;
 
     display: flex;
     justify-content: center;
@@ -1030,19 +1100,325 @@ input[type="search"]::-webkit-search-results-decoration {
 .section8 {
     width: 100%;
     height: 45em;
-    margin: 2.5em auto 1.5em;
+    padding: 5em 3em 5em 5em;
 
-    background-color: red;
+    display: flex;
+    justify-content: space-around;
 }
+
+.section8 .sec8-content {
+    width: 50%;
+    height: 100%;
+    margin-left: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.section8 .sec8-content .sec8-header {
+    height: 17%;
+}
+
+.section8 .sec8-content .sec8-header p {
+    font-size: 1.7em;
+    opacity: .8;
+}
+
+.section8 .sec8-content .sec8-body {
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.section8 .sec8-content .sec8-body .sec8-body-parts {
+    height: 30%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section8 .sec8-content .sec8-body .sec8-body-parts .numAndHead {
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.section8 .sec8-content .sec8-body .sec8-body-parts .numAndHead .number {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #d8e5ff;
+    color: var(--mainColor);
+
+}
+
+.section8 .sec8-content .sec8-body .sec8-body-parts .numAndHead h2 {
+    width: calc(100% - 60px);
+}
+
+.section8 .sec8-content .sec8-body .sec8-body-parts .content {
+    width: calc(90% - 40px);
+    height: 100%;
+}
+
+.section8 .sec8-content .sec8-body .sec8-body-parts .content p {
+    font-size: 1.1em;
+    margin-left: 1%;
+    line-height: 1.8em;
+    opacity: .8;
+}
+
+.section8 .sec8-img {
+    width: 50%;
+    height: 100%;
+    margin-right: 4%;
+    position: relative;
+}
+
+
+.section8 .sec8-img .img {
+    width: 65%;
+    height: 100%;
+    margin-left: 5em;
+    border-radius: 2.5em;
+}
+
+/*user rate*/
+.section8 .sec8-img .userRate {
+    width: 26%;
+    height: 14%;
+    padding: 5px;
+    border-radius: 1em;
+    background-color: white;
+    filter: drop-shadow(2px 4px 10px black);
+
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+.section8 .sec8-img .userRate:nth-child(1) {
+    top: 15%;
+    left: 0;
+}
+
+.section8 .sec8-img .userRate:nth-child(2) {
+    top: 45%;
+    left: 67%;
+}
+
+.section8 .sec8-img .userRate:nth-child(3) {
+    top: 75%;
+    left: 0;
+}
+
+.section8 .sec8-img .userRate .userImg {
+    width: 36%;
+    height: 85%;
+    border-radius: 50%;
+
+}
+
+.section8 .sec8-img .userRate .userImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    border: 2px solid #4b4b54;
+}
+
+.section8 .sec8-img .userRate .userNameAndRate {
+    width: 60%;
+    padding-left: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section8 .sec8-img .userRate .userNameAndRate h2 {
+    font-size: 1.2em;
+    width: 80%;
+}
+
+.section8 .sec8-img .userRate .userNameAndRate p {
+    width: 100%;
+    opacity: .8;
+}
+
+.section8 .sec8-img .userRate .userNameAndRate p i {
+    margin-left: 7%;
+    color: #ffca24;
+}
+
+.section8 .sec8-img .userRate .userNameAndRate .startAndNum {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+.section8 .sec8-img .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2.5em;
+
+}
+
+
 
 /*section 9*/
 .section9 {
     width: 100%;
-    height: 45em;
+    height: 35em;
     margin: 2.5em auto 1.5em;
 
-    background-color: red;
+    background-color: var(--sec3-bg-color);
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+/*new added*/
+
+
+.mySlides {
+    display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 80%;
+    height: 90%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides:first-child {
+    display: block;
+}
+
+.slideshow-container .mySlides .sec9-img {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+}
+
+.slideshow-container .sec9-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow-container .mySlides .sec9-content {
+    width: 60%;
+    height: 100%;
+    padding: 3em 0 2em 2em;
+
+
+    position: absolute;
+    left: 40%;
+
+}
+
+.slideshow-container .mySlides .sec9-content h2 {
+    font-size: 2.5em;
+    margin-bottom: .2em;
+}
+
+.slideshow-container .mySlides .sec9-content>p {
+    font-size: 1.2em;
+    margin-top: 2em;
+    width: 80%;
+    line-height: 2em;
+}
+
+.slideshow-container .mySlides .sec9-content p {
+    opacity: .6;
+
+}
+
+.slideshow-container .mySlides .sec9-content .customer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+
+}
+
+.slideshow-container .mySlides .sec9-content .customer .customer-img {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+
+
+}
+
+.slideshow-container .mySlides .sec9-content .customer .customer-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.slideshow-container .mySlides .sec9-content .customer .nameAndJop {
+    margin-left: 2%;
+}
+
+.slideshow-container .mySlides .sec9-content .customer .starts {
+    margin-left: 30%;
+}
+
+.slideshow-container .mySlides .sec9-content .customer .starts i {
+    color: #ffca24;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+/*new Done*/
+
+
 
 /*end of body*/
 
