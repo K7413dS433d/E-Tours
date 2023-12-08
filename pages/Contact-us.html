@@ -22,6 +22,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- keyframes link -->
+    <link rel="stylesheet" href="../css/keyframes.css">
   </head>
 
   <body>
@@ -31,13 +33,13 @@
 
         <div class="HeaderBar">
           <ul>
-            <li class="e"><a href="#">Home</a></li>
+            <li class="e"><a href="../index.html">Home</a></li>
             <li class="e"><a href="#">Services</a></li>
-            <li class="e"><a href="#">Tours</a></li>
+            <li class="e"><a href="../pages/Tours.html">Tours</a></li>
             <li class="e"><a href="#">Contact us</a></li>
           </ul>
         </div>
-        
+
         <div class="searchDiv">
           <form action="#" class="searchInput">
             <input type="search" name="search" placeholder="Search..." />
@@ -45,18 +47,55 @@
           </form>
         </div>
         <div class="ls">
-
           <ul>
-            <li class="login"><a href="#">Login</a></li>
-            <li class="signup"><a href="#">Sign up</a></li>
+            <li class="login"><a href="../pages/sign-in.html">Login</a></li>
+            <li class="signup"><a href="../pages/sign-up.html">Sign up</a></li>
           </ul>
         </div>
-        
       </header>
 
-      <!-- Start you code here -->
+      <!-- start body -->
+      <div class="mainContainer">
+        <div class="content">
+          <h1>Contact Us</h1>
+          <p>
+            Welcome to <a href="../index.html">E-Tours</a>! We are thrilled to
+            assist you with any inquiries, feedback, or information you may
+            need. Our commitment is to provide exceptional service and ensure
+            your travel experience with E-Tours is nothing short of
+            extraordinary.
+          </p>
+        </div>
 
+        <div class="senToUs">
+          <div class="nameContainer">
+            <div class="img">
+              <img
+                src="../images/Contact Us/Person.png"
+                alt="image not found"
+              />
+            </div>
+            <input type="text" id="name" placeholder="Name" />
+          </div>
+          <div class="nameContainer">
+            <div class="img">
+              <img
+                src="../images/Contact Us/Message.png"
+                alt="image not found"
+              />
+            </div>
+            <input type="email" id="email" placeholder="Email" />
+          </div>
+          <input type="text" placeholder="Message" />
+          <div class="bottoms">
+            <button>Submit</button>
+            <p>or</p>
+            <button>Live chat</button>
+          </div>
+        </div>
+      </div>
 
+      <!-- end body -->
     </div>
     <footer>
       <div class="container">
