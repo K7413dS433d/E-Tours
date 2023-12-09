@@ -54,4 +54,146 @@ body::-webkit-scrollbar-thumb {
 div.logo img{
     width: 200px;
     padding-top: 10px;
+    margin-left: 20px;
+    
+}
+
+
+
+div.login {
+    background-color: white;
+    margin-left: 450px;
+    margin-top: 20px;
+    height: 540px;
+    border-radius: 25px;
+    width: 500px;
+    border:  #e9e6e6;
+    box-shadow: 0px 0px 20px 12px #b7b7b7;
+}
+div#hedder {
+    height: 85px;
+}
+
+div#hedder img {
+    width: 100px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.login>p {
+    font-size: 55px;
+    margin-left: 165px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor:default;
+
+}
+.login div.inputs{
+    margin-left: 90px;
+
+}
+
+.login .inputs input {
+    width: 320px;
+    height: 25px;
+    background-color:rgb(232, 229, 229);
+    border: 0px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.login input#Email {
+    margin-bottom: 10px;
+}
+
+.login a {
+    text-decoration: none;
+   color:  var(--mainColor);
+}
+
+.login input#S-in {
+    width: 165px;
+    margin: 15px 0 30px 65px;
+   background-color:  var(--mainColor);
+    color: white;
+    cursor: pointer;
+    padding: 0px;
+    height: 35px;
+}
+.login hr#top {
+    margin: 0 100px -15px 250px;
+}
+
+.login .line p  {
+    margin-left: 225px;
+    color: grey;
+    cursor:default;
+}
+
+.login hr#bottom {
+    margin: -10px 280px 10px 80px;
+}
+.login #text p{
+    margin-left: 140px;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+
+.login div#google{
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 35px;
+    margin: 10px 155px 5px 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.login div#google a{
+    color: #000;
+    font-weight: bold;
+    font-size: medium;
+ }
+
+ .login .google img {
+    position: absolute;
+    left: 605px;
+    top: 513px;
+    width: 20px;
+}
+
+.login div#apple{
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 35px;
+    margin: 10px 155px 10px 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.login div#apple a{
+    color: #000;
+    font-weight: bold;
+    font-size: medium;
+ }
+
+ .login .apple img {
+    position: absolute;
+    left: 605px;
+    top: 557px;
+    width: 20px;
+}
+
+.login div#go {
+    margin: 10px 170px 0px;
+    color: gray;
+}
+
+.login .inputs input:focus {
+    outline: none;
 }
