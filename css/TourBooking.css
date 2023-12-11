@@ -203,23 +203,29 @@ section.booking {
     display: flex;
     flex-direction: row;
     align-items: start;
+
+    animation: pageAnimation .75s ease-in-out;
+
 }
 
 #slideshow-container {
     margin-bottom: 50px;
     max-width: 100%;
 }
-#slideshow-container img#big-screen{
+
+#slideshow-container img#big-screen {
     width: 100%;
     height: 550px;
     border-radius: 50px;
     object-fit: cover;
-    opacity: 1; /* Set the initial opacity to 1 (fully visible) */
-    transition: opacity 0.2s ease-in-out; 
+    opacity: 1;
+    /* Set the initial opacity to 1 (fully visible) */
+    transition: opacity 0.2s ease-in-out;
 }
+
 #big-screen.loaded {
     opacity: 1;
-  }
+}
 
 #thumbnails-container {
     display: flex;
@@ -238,9 +244,10 @@ section.booking {
     border-radius: 10px;
     transition: .2s ease-in-out;
 }
-.thumbnail:hover{
+
+.thumbnail:hover {
     filter: brightness(1.1);
-    transform: translate(0px,-4px);
+    transform: translate(0px, -4px);
 }
 
 section.booking .TourSection {
@@ -349,7 +356,8 @@ section.booking .TourSection .ticket {
     align-items: center;
     margin-top: 30px;
 }
-section.booking .TourSection .ticket .left{
+
+section.booking .TourSection .ticket .left {
     margin-left: 40px;
 }
 
