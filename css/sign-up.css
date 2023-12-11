@@ -61,9 +61,10 @@ div.logo img {
 
 
 
-div.sign-up {
+.Sign-up {
+    position: relative;
+    left: 500px;
     background-color: white;
-    margin-left: 450px;
     height: 600px;
     border-radius: 25px;
     width: 500px;
@@ -72,150 +73,167 @@ div.sign-up {
 }
 
 div#hedder {
-    height: 60px;
+    position: relative;
+    height: 50px;
+    left: 20px;
 }
 
 div#hedder img {
     width: 75px;
-    margin-left: 215px;
-    margin-top: 10px;
+    position: relative;
+    left: 200px;
 }
 
-.sign-up>p {
-    font-size: 55px;
-    margin-left: 165px;
+.Sign-up>p {
+    font-size: 50px;
+    position: relative;
+    left: 170px;
     font-weight: bold;
-    margin-bottom: 10px;
     cursor: default;
-
+    height: 100px;
 }
 
-.sign-up div.inputs {
-    margin-left: 90px;
-
+.Sign-up .inputs {
+    position: relative;
+    left: 90px;
 }
 
-.sign-up .inputs input {
-    height: 25px;
+.Sign-up .inputs input {
+    width: 320px;
+    height: 30px;
     background-color: rgb(232, 229, 229);
-    border: 0px;
+    outline: black;
     border-radius: 30px;
     margin-bottom: 20px;
     padding: 10px;
 }
 
-.sign-up input#F-name {
+.Sign-up label {
+    position:absolute;
+    left:0px;
+    margin:2px 0px 0px 10px;
+    color: gray;
+    font-size: 15px;
+    pointer-events: none;
+    transition: 1s ;
+}
+label#l-name{
+    position: absolute;
+    left: 160px;
+    margin-left: 25px;
+
+}
+
+.Sign-up .F-name input {
     width: 150px;
 }
 
-.sign-up input#L-name {
+.Sign-up .L-name input {
     width: 150px;
     margin-left: 20px;
 }
 
-
-.sign-up input#Email {
-    width: 320px;
-}
-
-.sign-up input#password {
-    width: 320px;
-}
-
-.sign-up input#C-password {
-    width: 320px;
-}
-
-
-.sign-up a {
+.Sign-up a {
     text-decoration: none;
     color: var(--mainColor);
 }
 
-.sign-up input#S-in {
+.Sign-up input#S-up {
     width: 165px;
-    margin: 10px 0 30px 65px;
+    margin: 0px 0 30px 65px;
     background-color: var(--mainColor);
     color: white;
     cursor: pointer;
     padding: 0px;
     height: 35px;
+    font-size: large;
 }
 
-.sign-up hr#top {
+.Sign-up hr#top {
     margin: 0 100px -15px 250px;
 }
 
-.sign-up .line p {
+.Sign-up .line p {
     margin-left: 225px;
     color: grey;
     cursor: default;
 }
 
-.sign-up hr#bottom {
+.Sign-up hr#bottom {
     margin: -10px 280px 10px 80px;
 }
 
-.sign-up #text p {
+.Sign-up #text p {
     margin-left: 140px;
     margin-bottom: 10px;
     color: gray;
 
 }
+.Sign-up .google {
+    height: 45px;
+    }
 
-.sign-up div#google {
-    border: 1px solid black;
-    border-radius: 30px;
-    height: 35px;
-    margin: 10px 155px 5px 135px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 30px;
+.Sign-up div#google {
+        border: 1px solid black;
+        border-radius: 30px;
+        height: 35px;
+        margin: 10px 155px 5px 135px;
 }
 
-.sign-up div#google a {
+.Sign-up div#google a {
     color: #000;
     font-weight: bold;
     font-size: medium;
+    margin-left: 45px;
+    position: relative;
+    top: 5px;
 }
 
-.sign-up .google img {
-    position: absolute;
-    left: 605px;
-    top: 540px;
+
+.Sign-up .google img {
+    position: relative;
     width: 20px;
+    left: 30%;
+    top: -75%;
 }
 
-.sign-up div#apple {
+.Sign-up .apple {
+    height: 45px;
+    }
+.Sign-up div#apple {
     border: 1px solid black;
     border-radius: 30px;
     height: 35px;
-    margin: 10px 155px 5px 135px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 30px;
+    margin: 10px 155px 0px 135px;
 }
 
-.sign-up div#apple a {
+.Sign-up div#apple a {
     color: #000;
     font-weight: bold;
     font-size: medium;
+    margin-left: 45px;
+    position: relative;
+    top: 5px;
 }
 
-.sign-up .apple img {
-    position: absolute;
-    left: 605px;
-    top: 585px;
+.Sign-up .apple img {
+    position: relative;
     width: 20px;
+    left: 30%;
+    top: -65%;
 }
 
-.sign-up div#go {
+.Sign-up div#go {
     margin: 10px 150px 0px;
     color: gray;
 }
 
-.sign-up .inputs input:focus {
-    outline: none;
+.Sign-up .inputs input:valid~label,
+.Sign-up .inputs input:focus~label{
+color: var(--mainColor);
+transform: translateY(-15px) ;
+font-size: 11px;
+padding:0px 10px 0px 10px;
+background-color:transparent ;
+letter-spacing: 2px;
 }

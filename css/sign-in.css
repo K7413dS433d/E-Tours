@@ -61,10 +61,10 @@ div.logo img {
 
 
 
-div.login {
+.login {
+    position: relative;
+    left: 500px;
     background-color: white;
-    margin-left: 450px;
-    margin-top: 20px;
     height: 540px;
     border-radius: 25px;
     width: 500px;
@@ -73,56 +73,71 @@ div.login {
 }
 
 div#hedder {
-    height: 85px;
+    position: relative;
+    height: 75px;
 }
 
 div#hedder img {
     width: 100px;
-    margin-left: 200px;
-    margin-top: 10px;
+    position: relative;
+    left: 200px;
 }
 
 .login>p {
     font-size: 55px;
-    margin-left: 165px;
+    position: relative;
+    left: 165px;
     font-weight: bold;
-    margin-bottom: 20px;
     cursor: default;
+    height: 100px;
 
 }
 
-.login div.inputs {
-    margin-left: 90px;
-
+.login .inputs {
+    position: relative;
+    left: 90px;
 }
 
 .login .inputs input {
     width: 320px;
-    height: 25px;
+    height: 30px;
     background-color: rgb(232, 229, 229);
-    border: 0px;
+    outline: black;
     border-radius: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px;
 }
 
-.login input#Email {
-    margin-bottom: 10px;
+.login label {
+    position:absolute;
+    left:0px;
+    margin:2px 0px 0px 10px;
+    color: gray;
+    font-size: 15px;
+    pointer-events: none;
+    transition: 1s 1s;
 }
-
 .login a {
     text-decoration: none;
     color: var(--mainColor);
 }
 
+.login .inputs a {
+    position: absolute;
+    top: 80px;
+   
+}
+
 .login input#S-in {
     width: 165px;
-    margin: 15px 0 30px 65px;
+    position: relative;
+    left: 65px;
     background-color: var(--mainColor);
     color: white;
     cursor: pointer;
     padding: 0px;
     height: 35px;
+    font-size: large;
 }
 
 .login hr#top {
@@ -145,60 +160,70 @@ div#hedder img {
     color: gray;
 }
 
-
+.login .google {
+height: 45px;
+}
 .login div#google {
     border: 1px solid black;
     border-radius: 30px;
     height: 35px;
     margin: 10px 155px 5px 135px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 30px;
 }
 
 .login div#google a {
     color: #000;
     font-weight: bold;
     font-size: medium;
+    margin-left: 45px;
+    position: relative;
+    top: 5px;
 }
 
 .login .google img {
-    position: absolute;
-    left: 605px;
-    top: 513px;
+    position: relative;
     width: 20px;
+    left: 30%;
+    top: -75%;
 }
+
+.login .apple {
+    height: 45px;
+    }
 
 .login div#apple {
     border: 1px solid black;
     border-radius: 30px;
     height: 35px;
-    margin: 10px 155px 10px 135px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 30px;
+    margin: 10px 155px 0px 135px;
 }
 
 .login div#apple a {
     color: #000;
     font-weight: bold;
     font-size: medium;
+    margin-left: 45px;
+    position: relative;
+    top: 5px;
 }
 
 .login .apple img {
-    position: absolute;
-    left: 605px;
-    top: 557px;
+    position: relative;
     width: 20px;
+    left: 30%;
+    top: -65%;
 }
 
 .login div#go {
-    margin: 10px 170px 0px;
+    margin: 0px 170px 0px;
     color: gray;
 }
 
-.login .inputs input:focus {
-    outline: none;
+.login .inputs input:valid~label,
+.login .inputs input:focus~label{
+color: var(--mainColor);
+transform: translateY(-15px) ;
+font-size: 11px;
+padding:0px 10px 0px 10px;
+background-color:transparent ;
+letter-spacing: 2px;
 }

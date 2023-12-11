@@ -27,12 +27,26 @@
 
         <p> Sign in </p>
 
-        <div class="inputs">
-          <input id="Email" type="email" placeholder="Email" required> <br>
-          <input id="password" type="password" placeholder="Password" required ><br>
-          <a href="https://fonts.googleapis.com">Forgot Password?</a><br>
-          <input id="S-in" type="submit" value="Login">
-        </div>
+        <form class="inputs">
+          <div>
+             <input type="email" placeholder=" " required="required"> 
+              <label >Email</label>                                          <br>
+          </div>
+
+          <div>
+             <input  type="password"  placeholder=" "  required="required">
+              <label >Password</label>                                      <br>
+          </div>
+
+          <div>
+              <a href="https://fonts.googleapis.com">Forgot Password?</a>       <br>
+          </div>
+
+          <div>
+              <input id="S-in" type="submit" name="submit" value="Login">
+          </div>
+        
+        </form>
 
         <div class="line">
           <hr id="top">
@@ -45,20 +59,19 @@
         </div>
 
         <div class="google">
+          <div id="google">
+            <a href="#">Cotinue with Google </a>                             <br>
+          </div>
           <img src="..\images\login\GoogleIcon.png">
         </div>
 
-           <div id="google">
-            <a href="#">Cotinue with Google </a>          <br>
-           </div>
 
         <div class="apple">
+          <div id="apple">
+            <a href="#">Cotinue with Apple </a> 
+          </div>
           <img src="..\images\login\AppleIcon.png">
         </div>
-
-           <div id="apple">
-            <a href="#">Cotinue with Apple </a> 
-           </div>
 
            <div id="go">
            <span>no account?</span>
@@ -66,10 +79,6 @@
            </div>
 
        </div>
-      
-
-
-
 
     </div>
   </body>
