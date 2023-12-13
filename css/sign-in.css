@@ -62,19 +62,17 @@ div.logo img {
 
 
 .login {
-    position: relative;
-    left: 500px;
     background-color: white;
-    height: 540px;
     border-radius: 25px;
     width: 500px;
-    border: #e9e6e6;
     box-shadow: 0px 0px 20px 12px #b7b7b7;
+    margin: 0 auto;
 }
 
 div#hedder {
     position: relative;
     height: 75px;
+
 }
 
 div#hedder img {
@@ -101,8 +99,9 @@ div#hedder img {
 .login .inputs input {
     width: 320px;
     height: 30px;
-    background-color: rgb(232, 229, 229);
-    outline: black;
+    background-color:#EEEE;
+    outline: none;
+    border: none;
     border-radius: 30px;
     margin-bottom: 20px;
     padding: 10px;
@@ -115,7 +114,7 @@ div#hedder img {
     color: gray;
     font-size: 15px;
     pointer-events: none;
-    transition: 1s 1s;
+    transition: 1s ;
 }
 .login a {
     text-decoration: none;
@@ -124,20 +123,22 @@ div#hedder img {
 
 .login .inputs a {
     position: absolute;
-    top: 80px;
-   
+    top: 85px;
+    left: 5px;
+   font-size: 13px;
 }
 
 .login input#S-in {
-    width: 165px;
+    width: 145px;
     position: relative;
-    left: 65px;
+    left: 75px;
     background-color: var(--mainColor);
     color: white;
     cursor: pointer;
     padding: 0px;
     height: 35px;
     font-size: large;
+    transition: 1s ;
 }
 
 .login hr#top {
@@ -221,9 +222,10 @@ height: 45px;
 .login .inputs input:valid~label,
 .login .inputs input:focus~label{
 color: var(--mainColor);
-transform: translateY(-15px) ;
-font-size: 11px;
+transform: translateY(-20px) ;
 padding:0px 10px 0px 10px;
-background-color:transparent ;
 letter-spacing: 2px;
+}
+.login input#S-in:hover{
+    transform: scale(1.05,1.05);
 }
