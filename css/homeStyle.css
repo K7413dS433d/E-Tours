@@ -603,47 +603,23 @@ input[type="search"]::-webkit-search-results-decoration {
 .section2 .sec2-content .sec2-links a:last-of-type {
     text-decoration: none;
     color: var(--mainColor);
-    width: 29%;
+    width: 25%;
     height: 50%;
     font-size: 20px;
     margin-left: 20px;
-    margin-top: 13px;
 
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
 }
 
 /*arrow*/
-.section2 .sec2-content .sec2-links a:last-of-type::before {
-    content: '';
-    width: 7.5px;
-    height: 7.5px;
-    border-top: 2px solid var(--mainColor);
-    border-left: 2px solid var(--mainColor);
-    transform: rotate(135deg);
-
-    position: absolute;
-    top: 24%;
-    left: 70%;
-
-
+.section2 .sec2-content .sec2-links a:last-of-type i {
+    color: var(--mainColor);
+    margin-right: 10px;
+    margin-top: 3px;
 }
-
-/*arrow body*/
-.section2 .sec2-content .sec2-links a:last-of-type::after {
-    content: '';
-    width: 0;
-    height: 12px;
-    border: 1px solid var(--mainColor);
-    transform: rotate(90deg);
-
-
-    position: absolute;
-    top: 18.5%;
-    left: 70%;
-
-}
-
 
 
 .section2 .sec2-content .sec2-links a:hover:first-of-type {
