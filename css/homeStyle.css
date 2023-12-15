@@ -311,12 +311,11 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: white;
     z-index: 5;
     border-radius: .9em;
-    box-shadow: -28px 25px 77px 0 #c29d9d;
+    box-shadow: 13px 20px 55px 0 #cbcbcb;
 
     /*div position*/
     position: absolute;
-    top: 97%;
-    left: center;
+    top: 95%;
 
 
     /*to customize icon*/
