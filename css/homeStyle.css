@@ -242,7 +242,7 @@ input[type="search"]::-webkit-search-results-decoration {
     top: 0;
     left: 0;
 
-    background-image: url("../images/section1-img.png");
+    background-image: url("../images/home/section1-img.png");
     background-repeat: no-repeat;
     background-size: cover;
     /*center background in div*/
@@ -417,7 +417,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 }
 
-/*section 4*/
+/*section 1 reservation*/
 .sec1-reservation .boxes:nth-child(4) a {
     width: 75%;
     height: 45%;
@@ -528,7 +528,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .section2 .sec2-images::before {
-    background-image: url(../images/sec2-img1.jpg);
+    background-image: url("../images/home/sec2-img1.jpg");
     position: absolute;
     top: -16%;
     left: 0px;
@@ -536,7 +536,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .section2 .sec2-images::after {
-    background-image: url(../images/sec2-img2.jpg);
+    background-image: url("../images/home/sec2-img2.jpg");
     position: absolute;
     top: 2%;
     left: 30%;
@@ -719,21 +719,21 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .section3 .sec3-images .sec3-single-img:nth-child(1) {
-    background-image: url(../images/sec3-img1.jpg);
+    background-image: url("../images/home/sec3-img1.jpg");
 }
 
 .section3 .sec3-images .sec3-single-img:nth-child(2) {
-    background-image: url(../images/sec3-img2.jpg);
+    background-image: url("../images/home/sec3-img2.jpg");
 
 }
 
 .section3 .sec3-images .sec3-single-img:nth-child(3) {
-    background-image: url(../images/sec3-img3.jpg);
+    background-image: url("../images/home/sec3-img3.jpg");
 
 }
 
 .section3 .sec3-images .sec3-single-img:nth-child(4) {
-    background-image: url(../images/sec3-img4.jpg);
+    background-image: url("../images/home/sec3-img4.jpg");
 
 }
 
@@ -793,6 +793,28 @@ input[type="search"]::-webkit-search-results-decoration {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    position: relative;
+}
+
+/* offers */
+.section4 .sec4-cards-container .sec4-card::before {
+    content: '20% Off';
+    width: 4.6em;
+    height: 2em;
+    text-align: center;
+    font-size: 1.2;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 4%;
+    left: 77%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .section4 .sec4-cards-container .sec4-card:hover {
@@ -909,7 +931,7 @@ input[type="search"]::-webkit-search-results-decoration {
     background-repeat: no-repeat;
     top: 0;
     left: 0;
-    background-image: url(../images/sec5-img2.png);
+    background-image: url("../images/home/sec5-img2.png");
     border-radius: 2em;
 }
 
@@ -1037,7 +1059,7 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 15em;
     margin: 2.5em auto 1.5em;
     border-radius: 2em;
-    background-image: url(../images/sec7-img1.jpg);
+    background-image: url("../images/home/sec7-img1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 80%;
