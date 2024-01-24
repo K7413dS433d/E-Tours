@@ -17,6 +17,7 @@ body {
     margin: 0;
     font-family: 'Kanit', sans-serif;
     color: black;
+    position: relative;
 }
 
 body::before {
@@ -25,7 +26,7 @@ body::before {
     left: 0;
     top: 0;
     width: 100%;
-    height: 800vh;
+    height: 100%;
     z-index: -3000;
     background-image: url("../images/PageBg.png");
     background-size: cover;
@@ -51,7 +52,6 @@ body::-webkit-scrollbar-thumb {
 .container {
     max-width: 1500px;
     margin: 0px auto;
-
 }
 
 
@@ -243,7 +243,7 @@ input[type="search"]::-webkit-search-results-decoration {
     top: 0;
     left: 0;
 
-    background-image: url("../images/section1-img.png");
+    background-image: url("../images/home/section1-img.png");
     background-repeat: no-repeat;
     background-size: cover;
     /*center background in div*/
@@ -311,12 +311,11 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: white;
     z-index: 5;
     border-radius: .9em;
-    box-shadow: -28px 25px 77px 0 #c29d9d;
+    box-shadow: 13px 20px 55px 0 #cbcbcb;
 
     /*div position*/
     position: absolute;
-    top: 97%;
-    left: center;
+    top: 95%;
 
 
     /*to customize icon*/
@@ -418,7 +417,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 }
 
-/*section 4*/
+/*section 1 reservation*/
 .sec1-reservation .boxes:nth-child(4) a {
     width: 75%;
     height: 45%;
@@ -529,7 +528,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .section2 .sec2-images::before {
-    background-image: url(../images/sec2-img1.jpg);
+    background-image: url("../images/home/sec2-img1.jpg");
     position: absolute;
     top: -16%;
     left: 0px;
@@ -537,7 +536,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .section2 .sec2-images::after {
-    background-image: url(../images/sec2-img2.jpg);
+    background-image: url("../images/home/sec2-img2.jpg");
     position: absolute;
     top: 2%;
     left: 30%;
@@ -604,47 +603,23 @@ input[type="search"]::-webkit-search-results-decoration {
 .section2 .sec2-content .sec2-links a:last-of-type {
     text-decoration: none;
     color: var(--mainColor);
-    width: 29%;
+    width: 25%;
     height: 50%;
     font-size: 20px;
     margin-left: 20px;
-    margin-top: 13px;
 
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
 }
 
 /*arrow*/
-.section2 .sec2-content .sec2-links a:last-of-type::before {
-    content: '';
-    width: 7.5px;
-    height: 7.5px;
-    border-top: 2px solid var(--mainColor);
-    border-left: 2px solid var(--mainColor);
-    transform: rotate(135deg);
-
-    position: absolute;
-    top: 24%;
-    left: 70%;
-
-
+.section2 .sec2-content .sec2-links a:last-of-type i {
+    color: var(--mainColor);
+    margin-right: 10px;
+    margin-top: 3px;
 }
-
-/*arrow body*/
-.section2 .sec2-content .sec2-links a:last-of-type::after {
-    content: '';
-    width: 0;
-    height: 12px;
-    border: 1px solid var(--mainColor);
-    transform: rotate(90deg);
-
-
-    position: absolute;
-    top: 18.5%;
-    left: 70%;
-
-}
-
 
 
 .section2 .sec2-content .sec2-links a:hover:first-of-type {
@@ -744,21 +719,21 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .section3 .sec3-images .sec3-single-img:nth-child(1) {
-    background-image: url(../images/sec3-img1.jpg);
+    background-image: url("../images/home/sec3-img1.jpg");
 }
 
 .section3 .sec3-images .sec3-single-img:nth-child(2) {
-    background-image: url(../images/sec3-img2.jpg);
+    background-image: url("../images/home/sec3-img2.jpg");
 
 }
 
 .section3 .sec3-images .sec3-single-img:nth-child(3) {
-    background-image: url(../images/sec3-img3.jpg);
+    background-image: url("../images/home/sec3-img3.jpg");
 
 }
 
 .section3 .sec3-images .sec3-single-img:nth-child(4) {
-    background-image: url(../images/sec3-img4.jpg);
+    background-image: url("../images/home/sec3-img4.jpg");
 
 }
 
@@ -818,6 +793,28 @@ input[type="search"]::-webkit-search-results-decoration {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    position: relative;
+}
+
+/* offers */
+.section4 .sec4-cards-container .sec4-card::before {
+    content: '20% Off';
+    width: 4.6em;
+    height: 2em;
+    text-align: center;
+    font-size: 1.2;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 4%;
+    left: 77%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .section4 .sec4-cards-container .sec4-card:hover {
@@ -934,7 +931,7 @@ input[type="search"]::-webkit-search-results-decoration {
     background-repeat: no-repeat;
     top: 0;
     left: 0;
-    background-image: url(../images/sec5-img2.png);
+    background-image: url("../images/home/sec5-img2.png");
     border-radius: 2em;
 }
 
@@ -1062,7 +1059,7 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 15em;
     margin: 2.5em auto 1.5em;
     border-radius: 2em;
-    background-image: url(../images/sec7-img1.jpg);
+    background-image: url("../images/home/sec7-img1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 80%;

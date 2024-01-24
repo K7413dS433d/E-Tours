@@ -22,6 +22,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- keyframes link -->
+    <link rel="stylesheet" href="../css/keyframes.css" />
+    <script src="../js/TourBooking.js"></script>
   </head>
 
   <body>
@@ -31,13 +34,13 @@
 
         <div class="HeaderBar">
           <ul>
-            <li class="e"><a href="#">Home</a></li>
-            <li class="e"><a href="#">Services</a></li>
-            <li class="e"><a href="#">Tours</a></li>
-            <li class="e"><a href="#">Contact us</a></li>
+            <li class="e"><a href="../index.html">Home</a></li>
+            <li class="e"><a href="../pages/Tours.html">Tours</a></li>
+            <li class="e"><a href="../pages/Contact-us.html">Contact us</a></li>
+            <li class="e"><a href="../pages/About-us.html">about us</a></li>
           </ul>
         </div>
-        
+
         <div class="searchDiv">
           <form action="#" class="searchInput">
             <input type="search" name="search" placeholder="Search..." />
@@ -45,19 +48,117 @@
           </form>
         </div>
         <div class="ls">
-
           <ul>
-            <li class="login"><a href="#">Login</a></li>
-            <li class="signup"><a href="#">Sign up</a></li>
+            <li class="login"><a href="../pages/sign-in.html">Login</a></li>
+            <li class="signup"><a href="../pages/sign-up.html">Sign up</a></li>
           </ul>
         </div>
-        
       </header>
 
-      <!-- Start you code here -->
+      <section class="booking">
+        <div class="TourSection">
+          <div id="slideshow-container">
+            <img id="big-screen" src="../images/Tour Booking/TourImage1.png" />
+            <div id="thumbnails-container">
+              <img
+                class="thumbnail"
+                src="../images/Tour Booking/TourImage1.png"
+              />
+              <img
+                class="thumbnail"
+                src="../images/Tour Booking/TourImage2.png"
+              />
+              <img
+                class="thumbnail"
+                src="../images/Tour Booking/TourImage3.png"
+              />
+              <img
+                class="thumbnail"
+                src="../images/Tour Booking/TourImage4.png"
+              />
+              <img
+                class="thumbnail"
+                src="../images/Tour Booking/TourImage5.png"
+              />
+              <img
+                class="thumbnail"
+                src="../images/Tour Booking/TourImage6.png"
+              />
+            </div>
+          </div>
 
+          <hr />
 
+          <div class="ToursMain">
+            <div id="Title">
+              <h1>Pyramids:</h1>
+              <ul>
+                <li><img src="../images/Tour Booking/Star 1.png" /></li>
+                <li><img src="../images/Tour Booking/Star 1.png" /></li>
+                <li><img src="../images/Tour Booking/Star 1.png" /></li>
+                <li><img src="../images/Tour Booking/Star 1.png" /></li>
+                <li><img src="../images/Tour Booking/GreyStar.png" /></li>
+                <li id="rate"><b>4 / 5</b></li>
+              </ul>
+              <h3>
+                <img src="../images/Tour Booking/Location.png" />
+                <p>Al Haram, Giza Governorate 3512201</p>
+              </h3>
+            </div>
+
+            <div id="Price">
+              <h4>From</h4>
+              <h1>2500$</h1>
+              <h4>Per Person</h4>
+              <h3>+4M Booked</h3>
+            </div>
+          </div>
+
+          <div class="desc">
+            Embark on a captivating journey through ancient Egypt with our
+            Pyramids Tour. Explore the Giza Plateau, marvel at the Great
+            Pyramid, and unravel the mysteries of the Sphinx. Let our expert
+            guides transport you back in time for an unforgettable encounter
+            with these iconic wonders.
+          </div>
+
+          <button>Book now</button>
+
+          <hr />
+
+          <div class="ticket">
+            <div class="left">
+              <h1 class="Ttitle">About this ticket:</h1>
+              <div class="about">
+                <div class="ticketDesc">
+                  <img src="../images/Tour Booking/1.png" />
+                  <div class="section1">
+                    <h1>Free cancellation</h1>
+                    <p>Cancel up to 24 hours in advance for a full refund</p>
+                  </div>
+                </div>
+                <div class="ticketDesc">
+                  <img src="../images/Tour Booking/2.png" />
+                  <div class="section2">
+                    <h1>Reserve now & pay later</h1>
+                    <p>lets you reserve without upfront payment.</p>
+                  </div>
+                </div>
+                <div class="ticketDesc">
+                  <img src="../images/Tour Booking/3.png" />
+                  <div class="section3">
+                    <h1>Duration 1.5 hours</h1>
+                    <p>Engage for 1.5 hours in this activity or event</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="ticketBook" src="../images/Tour Booking/Ticket.png" />
+          </div>
+        </div>
+      </section>
     </div>
+
     <footer>
       <div class="container">
         <div class="f1">
@@ -71,9 +172,9 @@
         <div class="f2">
           <h1>Company:</h1>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Tours &amp; Packages</a></li>
+            <li><a href="../pages/About-us.html">About us</a></li>
+            <li><a href="../pages/Contact-us.html">Contact</a></li>
+            <li><a href="../pages/Tours.html">Tours &amp; Packages</a></li>
             <li><a href="#">Terms of Service</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
