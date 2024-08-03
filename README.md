@@ -1,6 +1,6 @@
 # E-Tours
 
-Welcome to **E-Tours**, a comprehensive platform for booking and exploring tours. This project was collaboratively developed by our team, with the current repository maintained by **Khaled Saeed**.
+Welcome to **E-Tours**, a comprehensive platform for booking and exploring tours. This project was collaboratively developed by our team.
 
 ## Project Overview
 
