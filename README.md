@@ -20,7 +20,7 @@ The design of E-Tours was carefully crafted to ensure an intuitive and visually 
 
 ## Features
 
-- **Login and Sign-up**: Secure and straightforward authentication for users.
+- **Login and Sign-up**: A user interface designed for entering login and sign-up information.
 - **Tours**: Explore various tours available, with detailed information.
 - **Contact Us**: Get in touch with our team for inquiries or support.
 - **About Us**: Learn more about our mission and the team behind E-Tours.
