@@ -8,15 +8,11 @@ E-Tours is a user-friendly website designed to make it easy for users to discove
 
 ## Website
 
-You can explore the live website using the following link:
-
-[E-Tours](https://k7413ds433d.github.io/E-Tours/)
+You can explore the live website using the following link: [E-Tours](https://k7413ds433d.github.io/E-Tours/)
 
 ## UI/UX Design
 
-The design of E-Tours was carefully crafted to ensure an intuitive and visually appealing experience. You can view the design prototype on Figma:
-
-[UI/UX Design](https://www.figma.com/file/zzV4dBXXpfNnxZDSbU9X9K/E-Tours?type=design&node-id=0%3A1&mode=design&t=Wf0JhYhAFqSfq1dA-1)
+The design of E-Tours was carefully crafted to ensure an intuitive and visually appealing experience. You can view the design prototype on Figma: [UI/UX Design](https://www.figma.com/file/zzV4dBXXpfNnxZDSbU9X9K/E-Tours?type=design&node-id=0%3A1&mode=design&t=Wf0JhYhAFqSfq1dA-1)
 
 ## Features
 
